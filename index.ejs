@@ -1,0 +1,27 @@
+<%-include('include/_nav')%>
+<div class="container" >
+    <div class="add-user">
+      <a href="/add-newuser" class="border-shadow">
+        <span class="text-gradient">New User<i class="fa-solid fa-user-plus"></i></span>
+      </a>
+    </div>
+  </div>
+<form action="/" method="POST">
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Gender</th>
+          <th scope="col">Status</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <%-include('include/_tabledata')%>
+      </tbody>
+    </table>
+  </form>
+  </head>
+<%-include('include/_footer')%>
